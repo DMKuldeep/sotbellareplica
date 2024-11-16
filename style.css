@@ -1,0 +1,154 @@
+/* top mini header  */
+body {
+    font-family: 'Lato';
+}
+
+.mini-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.copy-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background-color:whitesmoke;
+}
+
+.newarrivaltext{
+    
+    margin-top: 100px;
+    
+    display: flex;
+  
+}
+
+.smallpara{
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.shopbtn{
+    font-size: 14px;
+    height: 38px;
+    width: 192px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 30px;
+
+    cursor: pointer;
+
+}
+
+.newarrive{
+   margin-left: 70px;
+   justify-content: center;
+   align-items: center;
+}
+
+.section3{
+    margin-top: 200px;
+}
+
+.description{
+    font-size: 10px;
+}
+.imageheading{
+    font-size: 12px;
+}
+
+.strike-through {
+    text-decoration: line-through;
+  }
+
+
+  .exploreheading{
+    margin-top: 50px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .explore{
+    margin-top: 80px;
+  }
+
+  .d-flex {
+    display: flex; 
+    transition: transform 0.5s ease; 
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+  }
+
+  .sliderimage{
+    height:792px;
+    width: 589.09px;
+  } */
+
+.carousel-inner .carousel-item img {
+    height: 792px; 
+    width: 100%;
+    object-fit: cover; 
+  }
+  
+  .section5{
+    margin-top: 80px;
+  }
+
+ .imagefullwidth{
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+
+  .para2 {
+    margin-top: 355px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  .shopbtn {
+    margin-top: 15px; 
+  
+  }
+  .section6para{
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 40px;
+  }
+  .setimage4{
+    margin-top: 50px;
+    justify-content: space-evenly;
+    display: flex;
+  }
+
+  .section6{
+    margin-top: 60px;
+  }
+
+  .quote{
+    margin-top: 140px;
+  }
+.blog2{
+    margin-top: 25px;
+    margin-left: 25px;
+    height: 230px;
+    width: 430px;
+    background-color: grey;
+    color: white;
+}
+  
