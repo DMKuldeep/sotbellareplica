@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+
 /* top mini header  */
 body {
     font-family: 'Lato';
@@ -27,7 +30,7 @@ body {
 
 .newarrivaltext{
     
-    margin-top: 100px;
+    margin-top: 80px;
     
     display: flex;
   
@@ -58,7 +61,9 @@ body {
 }
 
 .section3{
-    margin-top: 200px;
+    margin-top: 130px;
+
+
 }
 
 .description{
@@ -151,4 +156,128 @@ body {
     background-color: grey;
     color: white;
 }
+
+
+
+
+.newarrivaltext {
+    font-weight: bold;
+    font-family: 'Alike', serif;
+    width: 299px;
+    height: 44px;
+  }
+  
+  .smallpara {
+    color: #555;
+    font-size: 12px;
+
+  }
+  
+  .shopbtn {
+    background-color: black;
+    border: none;
+    font-size: 12px;
+    width: 192px;
+    height: 38px;
+  }
+  
+  .imageheading {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+  }
+  
+  .strike-through {
+    text-decoration: line-through;
+  }
+  
+/* Default Heart Icon */
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 12px; /* Adjust size */
+    width: 11px;
+    cursor: pointer;
+  }
+  
+  /* Active State */
+  .heart.active {
+    filter: invert(0%) sepia(100%) saturate(500%) hue-rotate(0deg); /* Black heart */
+    transform: scale(1.1); /* Slight scale-up effect */
+  }
+
+
+
+/* Custom Styling for Carousel */
+/* Custom Styling for Carousel */
+.owl-carousel {
+    display: flex;
+    justify-content: flex-start;   /* Align images to the left */
+    align-items: center;
+    overflow: hidden;              /* Hide overflow to prevent images from going out of view */
+    position: relative;
+  }
+  
+  .owl-carousel .item {
+    display: flex;
+    justify-content: center;       /* Center the images within each item */
+    align-items: center;
+    width: 40%;                     /* Set width to 40% for each item to display 2.5 images */
+    padding-right: 20px;            /* Add space between items */
+  }
+  
+  .owl-carousel .item img {
+    width: 100%;                    /* Make image fill the container */
+    height: 720px;                  /* Set fixed height for the image */
+    object-fit: cover;              /* Ensure the image covers the area without stretching */
+    border-radius: 8px;             /* Optional: For rounded corners on images */
+  }
+  
+  .owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .owl-carousel .owl-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .owl-carousel .owl-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Container for the section */
+  .section4 {
+    margin: 0 auto;                 /* Center the section horizontally */
+    padding: 50px 0;                /* Padding around the section */
+    max-width: 1300px;               /* Optional: Set a max-width for better control */
+  }
+  
+  /* Heading style */
+  .exploreheading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .heightwidthofimage{
+
+    height: 720px;
+    width: 700px;
+    
+  }
   
