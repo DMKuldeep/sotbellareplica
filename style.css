@@ -277,7 +277,73 @@ body {
   .heightwidthofimage{
 
     height: 720px;
-    width: 700px;
+    width: 4050px;
     
   }
+
+  .section4 {
+    max-width: 1200px; /* Adjust this to control the max width of the carousel */
+    margin: 0 auto;
+    padding: 20px 0;
+  }
   
+  .owl-carousel .item {
+    position: relative;
+    padding: 10px; /* Add space around items */
+  }
+  
+  .owl-carousel .item img {
+    display: block;
+    width: 580px;          /* Make the image take most of the item's width */
+    height: 720px;       /* Set a larger height */
+    object-fit: cover;   /* Ensure the image scales without distortion */
+    border-radius: 10px; /* Optional: Rounded corners for a modern design */
+  }
+  
+  .owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .owl-carousel .owl-nav button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .owl-carousel .owl-nav button.owl-prev {
+    left: -30px;
+  }
+  
+  .owl-carousel .owl-nav button.owl-next {
+    right: -30px;
+  }
+  
+  .owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .owl-carousel .owl-dots .owl-dot {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+  }
+  
+  .owl-carousel .owl-dots .owl-dot.active {
+    background-color: black;
+  }
+  
+  
+ 
