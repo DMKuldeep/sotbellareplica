@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap");
 
 /* top mini header  */
 body {
-    font-family: 'Lato';
+  font-family: "Lato";
 }
 
 /* General container setup */
@@ -24,7 +23,7 @@ body {
 .image1 {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/images/partywear-image1.png');
+  background-image: url("./assets/images/partywear-image1.png");
   background-size: cover;
   background-position: center;
 }
@@ -33,13 +32,14 @@ body {
 .image2 {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/images/partywear-image2.png');
+  background-image: url("./assets/images/partywear-image2.png");
   background-size: cover;
   background-position: center;
 }
 
 /* Video setup */
-.video1, .video2 {
+.video1,
+.video2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,297 +62,275 @@ body {
   opacity: 0; /* Hide image on hover */
 }
 
-
 .mini-head {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
 }
 
 .copy-btn {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 5px 10px;
-    margin-left: 10px;
-    cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .copy-btn:hover {
-    background-color:whitesmoke;
+  background-color: whitesmoke;
 }
 
-.newarrivaltext{
-    
-    margin-top: 80px;
-    
-    display: flex;
-  
+.newarrivaltext {
+  margin-top: 80px;
+
+  display: flex;
 }
 
-.smallpara{
-    font-size: 12px;
-    margin-top: 30px;
+.smallpara {
+  font-size: 12px;
+  margin-top: 30px;
 }
 
-.shopbtn{
-    font-size: 14px;
-    height: 38px;
-    width: 192px;
-    background-color: black;
-    color: white;
-    border: none;
-    margin-top: 30px;
+.shopbtn {
+  font-size: 14px;
+  height: 38px;
+  width: 192px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 30px;
 
-    cursor: pointer;
-
+  cursor: pointer;
 }
 
-.newarrive{
-   margin-left: 70px;
-   justify-content: center;
-   align-items: center;
+.newarrive {
+  margin-left: 70px;
+  justify-content: center;
+  align-items: center;
 }
 
-.section3{
-    margin-top: 110px;
-    background-color: white !important;
-
-
+.section3 {
+  margin-top: 110px;
+  background-color: white !important;
 }
 
-.description{
-    font-size: 10px;
+.description {
+  font-size: 10px;
 }
-.imageheading{
-    font-size: 12px;
+.imageheading {
+  font-size: 12px;
 }
 
 .strike-through {
-    text-decoration: line-through;
-  }
-
-
-  .exploreheading{
-    margin-top: 50px;
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .explore{
-    margin-top: 80px;
-  }
-
-  .d-flex {
-    display: flex; 
-    transition: transform 0.5s ease; 
-  }
-  
- 
-
-  .sliderimage{
-    height:792px;
-    width: 589.09px;
-  } */
-
-
-  
-  .section5{
-    margin-top: 80px;
-  }
-
- .imagefullwidth{
-    margin-top: 30px;
-    margin-bottom: 30px;
- }
-
-  .para2 {
-    margin-top: 355px;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-  }
-  .shopbtn {
-    margin-top: 15px; 
-  
-  }
-  .section6para{
-    justify-content: center;
-    text-align: center;
-    font-size: 36px;
-    margin-top: 40px;
-  }
-  .setimage4{
-    margin-top: 50px;
-    justify-content: space-evenly;
-    display: flex;
-  }
-
-  .section6{
-    margin-top: 60px;
-  }
-
-  .quote{
-    margin-top: 140px;
-  }
-.blog2{
-    margin-top: 25px;
-    margin-left: 25px;
-    height: 230px;
-    width: 430px;
-    background-color: grey;
-    color: white;
+  text-decoration: line-through;
 }
 
+.exploreheading {
+  margin-top: 50px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explore {
+  margin-top: 80px;
+}
 
+.d-flex {
+  display: flex;
+  transition: transform 0.5s ease;
+}
 
+.sliderimage {
+  height: 792px;
+  width: 589.09px;
+}
+*/ .section5 {
+  margin-top: 80px;
+}
+
+.imagefullwidth {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.para2 {
+  margin-top: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shopbtn {
+  margin-top: 15px;
+}
+.section6para {
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 40px;
+}
+.setimage4 {
+  margin-top: 50px;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.section6 {
+  margin-top: 60px;
+}
+
+.quote {
+  margin-top: 140px;
+}
+.blog2 {
+  margin-top: 25px;
+  margin-left: 25px;
+  height: 230px;
+  width: 430px;
+  background-color: grey;
+  color: white;
+}
 
 .newarrivaltext {
-    font-weight: bold;
-    font-family: 'Alike', serif;
-    width: 299px;
-    height: 44px;
-  }
-  
-  .smallpara {
-    color: #555;
-    font-size: 12px;
+  font-weight: bold;
+  font-family: "Alike", serif;
+  width: 299px;
+  height: 44px;
+}
 
-  }
-  
-  .shopbtn {
-    background-color: black;
-    border: none;
-    font-size: 12px;
-    width: 192px;
-    height: 38px;
-  }
-  
-  .imageheading {
-    font-size: 1rem;
-    font-weight: 600;
-  }
-  
-  .description {
-    font-size: 0.9rem;
-  }
-  
-  .strike-through {
-    text-decoration: line-through;
-  }
-  
+.smallpara {
+  color: #555;
+  font-size: 12px;
+}
 
-  .image1 {
-    background: url('./assets/images/partywear-image1.png') no-repeat center center;
-    background-size: cover;
-    height: 760px; /* Adjust height as needed */
-  }
-  
-  .image2 {
-    background: url('./assets/images/partywear-image2.png') no-repeat center center;
-    background-size: cover;
-    height: 760px; /* Adjust height as needed */
-  }
-  
+.shopbtn {
+  background-color: black;
+  border: none;
+  font-size: 12px;
+  width: 192px;
+  height: 38px;
+}
 
-  .blackdress1 {
-    background: url('./assets/images/blackdress1.png') no-repeat center center;
-    background-size: cover;
-    height: 680px; /* Maintain uniform height */
-  }
-  
-  .blackdress2 {
-    background: url('./assets/images/blackdress2.png') no-repeat center center;
-    background-size: cover;
-    height: 680px; /* Maintain uniform height */
-  }
-  
-  .blackdress3 {
-    background: url('./assets/images/blackdress3.png') no-repeat center center;
-    background-size: cover;
-    height: 680px; /* Maintain uniform height */
-  }
-  
-  h1.newarrivaltext.fw-bold {
-    /* text-align: center; */
-    justify-content: center;
-    display: contents;
+.imageheading {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 0.9rem;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.image1 {
+  background: url("./assets/images/partywear-image1.png") no-repeat center
+    center;
+  background-size: cover;
+  height: 760px; /* Adjust height as needed */
+}
+
+.image2 {
+  background: url("./assets/images/partywear-image2.png") no-repeat center
+    center;
+  background-size: cover;
+  height: 760px; /* Adjust height as needed */
+}
+
+.blackdress1 {
+  background: url("./assets/images/blackdress1.png") no-repeat center center;
+  background-size: cover;
+  height: 680px; /* Maintain uniform height */
+}
+
+.blackdress2 {
+  background: url("./assets/images/blackdress2.png") no-repeat center center;
+  background-size: cover;
+  height: 680px; /* Maintain uniform height */
+}
+
+.blackdress3 {
+  background: url("./assets/images/blackdress3.png") no-repeat center center;
+  background-size: cover;
+  height: 680px; /* Maintain uniform height */
+}
+
+h1.newarrivaltext.fw-bold {
+  /* text-align: center; */
+  justify-content: center;
+  display: contents;
 }
 /* Default Heart Icon */
 .heart {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    height: 12px; /* Adjust size */
-    width: 11px;
-    cursor: pointer;
-  }
-  
-  /* Active State */
-  .heart.active {
-    filter: invert(0%) sepia(100%) saturate(500%) hue-rotate(0deg); /* Black heart */
-    transform: scale(1.1); /* Slight scale-up effect */
-  }
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 12px; /* Adjust size */
+  width: 11px;
+  cursor: pointer;
+}
 
-
+/* Active State */
+.heart.active {
+  filter: invert(0%) sepia(100%) saturate(500%) hue-rotate(0deg); /* Black heart */
+  transform: scale(1.1); /* Slight scale-up effect */
+}
 
 /* Custom Styling for Carousel */
 /* Custom Styling for Carousel */
 
-  /* Container for the section */
-  .section4 {
-    margin: 0 auto;                 /* Center the section horizontally */
-    padding: 50px 0;                /* Padding around the section */
-    max-width: 1300px;               /* Optional: Set a max-width for better control */
-  }
-  
-  /* Heading style */
-  .exploreheading {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+/* Container for the section */
+.section4 {
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 50px 0; /* Padding around the section */
+  max-width: 1300px; /* Optional: Set a max-width for better control */
+}
 
-  .heightwidthofimage{
+/* Heading style */
+.exploreheading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    height: 720px;
-    width: 4050px;
-    
-  }
+.heightwidthofimage {
+  height: 720px;
+  width: 4050px;
+}
 
-  .section4 {
-    max-width: 1200px; /* Adjust this to control the max width of the carousel */
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  
-  
+.section4 {
+  max-width: 1200px; /* Adjust this to control the max width of the carousel */
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
 /* Owl Carousel Container */
 .owl-carousel {
   display: flex;
-  overflow: hidden;              /* Ensures that images outside the visible area are hidden */
+  overflow: hidden; /* Ensures that images outside the visible area are hidden */
   position: relative;
 }
 
 /* Item Style for Each Image */
 .owl-carousel .item {
-  flex: 0 0 auto;                /* Prevents the item from shrinking or growing */
-  width: 100%;                    /* Show 2.5 images */
-  box-sizing: border-box;        /* Includes padding in the width calculation */
+  flex: 0 0 auto; /* Prevents the item from shrinking or growing */
+  width: 100%; /* Show 2.5 images */
+  box-sizing: border-box; /* Includes padding in the width calculation */
 }
 
 /* Image Style for Each Item */
 .owl-carousel .item img {
-  width: 580px;                   /* Make image fill the container */
-  height: 720px;                  /* Ensure the image takes full height of the container */
-  object-fit: cover;             /* Ensure the image covers the area without stretching */
-  border-radius: 0%;            /* Optional: Adds rounded corners for aesthetics */
+  width: 580px; /* Make image fill the container */
+  height: 720px; /* Ensure the image takes full height of the container */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+  border-radius: 0%; /* Optional: Adds rounded corners for aesthetics */
 }
 
 /* Navigation Arrows */
@@ -378,22 +356,24 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.item{
+.item {
   height: 720px;
   width: 580px;
 }
 
-.video{
+.video {
   height: 714px;
   width: 628px;
 }
-.twoimage{
+/* .twoimage{
   height : 357px;
   width: 300px;
 
+} */
+video.img-fluid.no-gap.video {
+  max-width: 628px;
+  height: 736px;
 }
-
-
 
 .newarrive .row {
   display: flex;
@@ -411,6 +391,68 @@ body {
   max-height: 200px; /* Uniform height for product images */
   object-fit: cover;
 }
+.faq {
+  background-color: #000; /* Black background */
+  padding: 25px 0;
+}
+
+.faq img {
+  max-width: 80px; /* Adjust image size */
+  margin-bottom: 8px;
+}
+
+.faq p {
+  font-size: 14px;
+  color: #fff; /* White text */
+}
+
+.faq ul {
+  padding: 0;
+  margin: 0;
+}
+
+.faq-item {
+  flex: 1;
+}
+.spotlight{
+  background: url("./assets/images/backgroundspotlight.png") no-repeat center
+    center;
+  background-size: cover;
+  height: 343px; /* Adjust height as needed */
+  display: flex;
+
+}
+
+.knockut{
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-family: "Alike", serif;
+  font-size: 36px;
+  color: #000;
+}
+
+
+.knockutdetail{
+  font-family: "Alike", serif;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.mobiileimage{
+  margin-left: 140px;
+}
+
+@media (max-width: 768px) {
+  .faq ul {
+    flex-direction: column; /* Stack items on smaller screens */
+  }
+
+  .faq-item {
+    margin-bottom: 20px;
+  }
+}
+
+
+
 
 @media (max-width: 992px) {
   .newarrive .col-6 {
@@ -425,9 +467,6 @@ body {
     max-width: 100%;
   }
 }
-
-
-
 
 .section3 {
   background-color: #f8f9fa; /* Optional background for contrast */
@@ -470,7 +509,6 @@ body {
   }
 }
 
-
 @media (max-width: 768px) {
   .leftmargin {
     margin-left: 0; /* Reset margin for smaller screens */
@@ -478,13 +516,11 @@ body {
   }
 }
 
-
-
 footer {
-  background-color: #B3B3B3;
+  background-color: #b3b3b3;
   color: black;
   padding: 40px 20px;
-  font-family: 'Alike', serif;
+  font-family: "Alike", serif;
 }
 
 footer h5 {
@@ -511,7 +547,6 @@ footer h5 {
   text-decoration: underline;
 }
 
-
 .email-input-wrapper {
   position: relative;
   display: flex;
@@ -532,7 +567,6 @@ footer h5 {
 .email-input::placeholder {
   color: black; /* Placeholder text color */
   opacity: 0.7; /* Slightly faded placeholder */
-
 }
 
 .greater-sign {
@@ -548,13 +582,12 @@ footer h5 {
   border-color: black; /* Keeps the dashed border on focus */
   outline: none;
 }
-.h4{
+.h4 {
   font-size: 12px;
 }
-.h5{
+.h5 {
   font-size: 14px;
 }
-
 
 .social-links {
   padding: 0;
@@ -586,10 +619,17 @@ p {
   font-size: 14px;
   color: #666;
 }
-.bottom{
+.bottom {
   margin-top: 130px;
 }
+.whitetop {
+  display: inline;
+}
 
+img-fluid {
+  max-width: 628px;
+  height: 736px;
+}
 
 @media (max-width: 768px) {
   footer .col-md-2 {
@@ -597,19 +637,17 @@ p {
   }
 }
 
-
-
 /* Optional: Adjust Carousel Item for Responsive Layout */
 @media (max-width: 768px) {
   .owl-carousel .item {
-    width: 80%;                  /* Adjust width for smaller screens (single image per slide) */
-    padding: 0 5px;              /* Adjust spacing for smaller screens */
+    width: 80%; /* Adjust width for smaller screens (single image per slide) */
+    padding: 0 5px; /* Adjust spacing for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .owl-carousel .item {
-    width: 100%;                  /* Single image on very small screens */
-    padding: 0;                   /* No space between items */
+    width: 100%; /* Single image on very small screens */
+    padding: 0; /* No space between items */
   }
 }
