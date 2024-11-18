@@ -6,6 +6,63 @@ body {
     font-family: 'Lato';
 }
 
+/* General container setup */
+.container-fluid {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+/* Image containers for both columns */
+.image-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* First image background */
+.image1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/images/partywear-image1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Second image background */
+.image2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/images/partywear-image2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Video setup */
+.video1, .video2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none; /* So that video doesn't block the hover event */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Hover effect on image containers */
+.image-container:hover .video1,
+.image-container:hover .video2 {
+  opacity: 1; /* Show video on hover */
+}
+
+.image-container:hover .image1,
+.image-container:hover .image2 {
+  opacity: 0; /* Hide image on hover */
+}
+
+
 .mini-head {
     display: flex;
     justify-content: center;
@@ -94,20 +151,14 @@ body {
     transition: transform 0.5s ease; 
   }
   
-  .carousel-item img {
-    object-fit: cover;
-  }
+ 
 
   .sliderimage{
     height:792px;
     width: 589.09px;
   } */
 
-.carousel-inner .carousel-item img {
-    height: 792px; 
-    width: 100%;
-    object-fit: cover; 
-  }
+
   
   .section5{
     margin-top: 80px;
@@ -194,6 +245,43 @@ body {
     text-decoration: line-through;
   }
   
+
+  .image1 {
+    background: url('./assets/images/partywear-image1.png') no-repeat center center;
+    background-size: cover;
+    height: 760px; /* Adjust height as needed */
+  }
+  
+  .image2 {
+    background: url('./assets/images/partywear-image2.png') no-repeat center center;
+    background-size: cover;
+    height: 760px; /* Adjust height as needed */
+  }
+  
+
+  .blackdress1 {
+    background: url('./assets/images/blackdress1.png') no-repeat center center;
+    background-size: cover;
+    height: 680px; /* Maintain uniform height */
+  }
+  
+  .blackdress2 {
+    background: url('./assets/images/blackdress2.png') no-repeat center center;
+    background-size: cover;
+    height: 680px; /* Maintain uniform height */
+  }
+  
+  .blackdress3 {
+    background: url('./assets/images/blackdress3.png') no-repeat center center;
+    background-size: cover;
+    height: 680px; /* Maintain uniform height */
+  }
+  
+  h1.newarrivaltext.fw-bold {
+    /* text-align: center; */
+    justify-content: center;
+    display: contents;
+}
 /* Default Heart Icon */
 .heart {
     position: absolute;
@@ -214,51 +302,7 @@ body {
 
 /* Custom Styling for Carousel */
 /* Custom Styling for Carousel */
-.owl-carousel {
-    display: flex;
-    justify-content: flex-start;   /* Align images to the left */
-    align-items: center;
-    overflow: hidden;              /* Hide overflow to prevent images from going out of view */
-    position: relative;
-  }
-  
-  .owl-carousel .item {
-    display: flex;
-    justify-content: center;       /* Center the images within each item */
-    align-items: center;
-    width: 40%;                     /* Set width to 40% for each item to display 2.5 images */
-    padding-right: 20px;            /* Add space between items */
-  }
-  
-  .owl-carousel .item img {
-    width: 100%;                    /* Make image fill the container */
-    height: 720px;                  /* Set fixed height for the image */
-    object-fit: cover;              /* Ensure the image covers the area without stretching */
-    border-radius: 8px;             /* Optional: For rounded corners on images */
-  }
-  
-  .owl-carousel .owl-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-  }
-  
-  .owl-carousel .owl-nav button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .owl-carousel .owl-nav button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
+
   /* Container for the section */
   .section4 {
     margin: 0 auto;                 /* Center the section horizontally */
@@ -287,63 +331,80 @@ body {
     padding: 20px 0;
   }
   
+  
+/* Owl Carousel Container */
+.owl-carousel {
+  display: flex;
+  overflow: hidden;              /* Ensures that images outside the visible area are hidden */
+  position: relative;
+}
+
+/* Item Style for Each Image */
+.owl-carousel .item {
+  flex: 0 0 auto;                /* Prevents the item from shrinking or growing */
+  width: 100%;                    /* Show 2.5 images */
+  box-sizing: border-box;        /* Includes padding in the width calculation */
+}
+
+/* Image Style for Each Item */
+.owl-carousel .item img {
+  width: 580px;                   /* Make image fill the container */
+  height: 720px;                  /* Ensure the image takes full height of the container */
+  object-fit: cover;             /* Ensure the image covers the area without stretching */
+  border-radius: 0%;            /* Optional: Adds rounded corners for aesthetics */
+}
+
+/* Navigation Arrows */
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+}
+
+/* Style for Navigation Buttons */
+.owl-carousel .owl-nav button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 0%;
+  cursor: pointer;
+}
+
+/* Hover Effect for Navigation Buttons */
+.owl-carousel .owl-nav button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.item{
+  height: 720px;
+  width: 580px;
+}
+
+.video{
+  height: 736px;
+  width: 628px;
+}
+.twoimage{
+  height : 660px;
+  width: 628px;
+
+}
+
+
+
+/* Optional: Adjust Carousel Item for Responsive Layout */
+@media (max-width: 768px) {
   .owl-carousel .item {
-    position: relative;
-    padding: 10px; /* Add space around items */
+    width: 80%;                  /* Adjust width for smaller screens (single image per slide) */
+    padding: 0 5px;              /* Adjust spacing for smaller screens */
   }
-  
-  .owl-carousel .item img {
-    display: block;
-    width: 580px;          /* Make the image take most of the item's width */
-    height: 720px;       /* Set a larger height */
-    object-fit: cover;   /* Ensure the image scales without distortion */
-    border-radius: 10px; /* Optional: Rounded corners for a modern design */
+}
+
+@media (max-width: 480px) {
+  .owl-carousel .item {
+    width: 100%;                  /* Single image on very small screens */
+    padding: 0;                   /* No space between items */
   }
-  
-  .owl-carousel .owl-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-  }
-  
-  .owl-carousel .owl-nav button {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .owl-carousel .owl-nav button.owl-prev {
-    left: -30px;
-  }
-  
-  .owl-carousel .owl-nav button.owl-next {
-    right: -30px;
-  }
-  
-  .owl-carousel .owl-dots {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .owl-carousel .owl-dots .owl-dot {
-    width: 12px;
-    height: 12px;
-    margin: 5px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: gray;
-    cursor: pointer;
-  }
-  
-  .owl-carousel .owl-dots .owl-dot.active {
-    background-color: black;
-  }
-  
-  
- 
+}
