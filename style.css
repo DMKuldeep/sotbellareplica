@@ -118,7 +118,8 @@ body {
 }
 
 .section3{
-    margin-top: 130px;
+    margin-top: 110px;
+    background-color: white !important;
 
 
 }
@@ -383,13 +384,217 @@ body {
 }
 
 .video{
-  height: 736px;
+  height: 714px;
   width: 628px;
 }
 .twoimage{
-  height : 660px;
-  width: 628px;
+  height : 357px;
+  width: 300px;
 
+}
+
+
+
+.newarrive .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Add consistent spacing between products */
+  justify-content: space-between; /* Ensures equal spacing between products */
+}
+
+.newarrive .col-6 {
+  flex: 1 1 calc(25% - 15px); /* Four items per row with spacing adjustments */
+  max-width: calc(25% - 15px); /* Ensures spacing between items */
+}
+
+.newarrive img {
+  max-height: 200px; /* Uniform height for product images */
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .newarrive .col-6 {
+    flex: 1 1 calc(50% - 15px); /* Two items per row for medium screens */
+    max-width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 576px) {
+  .newarrive .col-6 {
+    flex: 1 1 100%; /* Single item per row for small screens */
+    max-width: 100%;
+  }
+}
+
+
+
+
+.section3 {
+  background-color: #f8f9fa; /* Optional background for contrast */
+}
+
+.left-column {
+  margin-left: 10%; /* Adjust the gap for the left column */
+}
+
+.product-cards .row {
+  margin: 0; /* Remove default row margin for better spacing */
+}
+
+.product-cards .col-6 {
+  flex: 0 0 25%; /* Ensure all four cards take up equal space in large screens */
+  max-width: 25%;
+}
+
+.product-cards .img-fluid {
+  max-height: 200px; /* Uniform height for images */
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .left-column {
+    margin-left: 0; /* Reset gap for smaller screens */
+    text-align: center; /* Align content centrally for responsiveness */
+  }
+
+  .product-cards .col-6 {
+    flex: 0 0 50%; /* Two products per row for medium screens */
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-cards .col-6 {
+    flex: 0 0 100%; /* Single product per row for smaller screens */
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .leftmargin {
+    margin-left: 0; /* Reset margin for smaller screens */
+    text-align: center; /* Center-align content for better responsiveness */
+  }
+}
+
+
+
+footer {
+  background-color: #B3B3B3;
+  color: black;
+  padding: 40px 20px;
+  font-family: 'Alike', serif;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+.email-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.email-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  color: black;
+  border: 2px black; /* Dashed border as per request */
+  outline: none;
+  border-radius: 4px;
+}
+
+.email-input::placeholder {
+  color: black; /* Placeholder text color */
+  opacity: 0.7; /* Slightly faded placeholder */
+
+}
+
+.greater-sign {
+  position: absolute;
+  right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer; /* Adds a clickable feel */
+}
+
+.email-input:focus {
+  border-color: black; /* Keeps the dashed border on focus */
+  outline: none;
+}
+.h4{
+  font-size: 12px;
+}
+.h5{
+  font-size: 14px;
+}
+
+
+.social-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer-social__link {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-social__link:hover {
+  color: #000;
+}
+
+.app-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.app-icon {
+  width: 130px;
+  height: auto;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+}
+.bottom{
+  margin-top: 130px;
+}
+
+
+@media (max-width: 768px) {
+  footer .col-md-2 {
+    margin-bottom: 20px;
+  }
 }
 
 
