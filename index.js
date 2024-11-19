@@ -55,13 +55,13 @@ $(document).ready(function() {
     autoplayHoverPause: true,
     responsive: {
       0: {
-        items: 1, // 1 image for very small screens
+        items: 1, 
       },
       768: {
-        items: 3, // 2.5 images for medium screens
+        items: 2.5, 
       },
       1024: {
-        items: 3, // 2.5 images for larger screens
+        items: 2.5, 
       }
     }
   });
