@@ -47,7 +47,7 @@
 $(document).ready(function() {
   $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 0,
     nav: false,
     dots: false,
     autoplay: false,
@@ -58,10 +58,10 @@ $(document).ready(function() {
         items: 1, // 1 image for very small screens
       },
       768: {
-        items: 2.5, // 2.5 images for medium screens
+        items: 3, // 2.5 images for medium screens
       },
       1024: {
-        items: 2.5, // 2.5 images for larger screens
+        items: 3, // 2.5 images for larger screens
       }
     }
   });

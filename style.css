@@ -1,25 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap");
 
-/* top mini header  */
-body {
-  font-family: "Lato";
-}
 
-/* General container setup */
 .container-fluid {
   display: flex;
   padding: 0;
   margin: 0;
 }
 
-/* Image containers for both columns */
 .image-container {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
-/* First image background */
+.twoimages {
+  margin-bottom: 114px;
+}
+
 .image1 {
   width: 100%;
   height: 100%;
@@ -28,7 +25,6 @@ body {
   background-position: center;
 }
 
-/* Second image background */
 .image2 {
   width: 100%;
   height: 100%;
@@ -37,7 +33,6 @@ body {
   background-position: center;
 }
 
-/* Video setup */
 .video1,
 .video2 {
   position: absolute;
@@ -47,37 +42,41 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  pointer-events: none; /* So that video doesn't block the hover event */
+  pointer-events: none;
   transition: opacity 0.5s ease-in-out;
 }
 
-/* Hover effect on image containers */
 .image-container:hover .video1,
 .image-container:hover .video2 {
-  opacity: 1; /* Show video on hover */
+  opacity: 1;
 }
 
 .image-container:hover .image1,
 .image-container:hover .image2 {
-  opacity: 0; /* Hide image on hover */
+  opacity: 0;
 }
 
 .mini-head {
+  font-family: "Lato";
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
   color: white;
   padding: 10px;
+  height: 40px;
+  font-size: 12px;
 }
 
 .copy-btn {
+  font-family: "Lato";
   background-color: white;
   color: black;
   border: none;
   padding: 5px 10px;
   margin-left: 10px;
   cursor: pointer;
+  font-size: 10px;
 }
 
 .copy-btn:hover {
@@ -119,11 +118,17 @@ body {
 }
 
 .description {
+  color: #000;
+  text-align: center;
+  font-family: "Lato", ;
   font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  /* 180% */
+
 }
-.imageheading {
-  font-size: 12px;
-}
+
 
 .strike-through {
   text-decoration: line-through;
@@ -131,11 +136,14 @@ body {
 
 .exploreheading {
   margin-top: 50px;
+  font-family: "Alike", serif;
   font-size: 36px;
   display: flex;
+  color: #000;
   justify-content: center;
   align-items: center;
 }
+
 .explore {
   margin-top: 80px;
 }
@@ -149,6 +157,7 @@ body {
   height: 792px;
   width: 589.09px;
 }
+
 */ .section5 {
   margin-top: 80px;
 }
@@ -165,19 +174,35 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .shopbtn {
   margin-top: 15px;
 }
+
 .section6para {
   justify-content: center;
+  font-family: "Alike", serif;
+  color: #000;
   text-align: center;
   font-size: 36px;
   margin-top: 40px;
+
 }
+
 .setimage4 {
   margin-top: 50px;
   justify-content: space-evenly;
   display: flex;
+}
+
+.fourimages {
+  display: inline-flex;
+  height: 493px;
+  padding: 58.5px 80px 40.5px 80px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
 }
 
 .section6 {
@@ -187,6 +212,7 @@ body {
 .quote {
   margin-top: 140px;
 }
+
 .blog2 {
   margin-top: 25px;
   margin-left: 25px;
@@ -230,35 +256,38 @@ body {
 }
 
 .image1 {
-  background: url("./assets/images/partywear-image1.png") no-repeat center
-    center;
+  background: url("./assets/images/partywear-image1.png") no-repeat center center;
   background-size: cover;
-  height: 760px; /* Adjust height as needed */
+  height: 760px;
+  /* Adjust height as needed */
 }
 
 .image2 {
-  background: url("./assets/images/partywear-image2.png") no-repeat center
-    center;
+  background: url("./assets/images/partywear-image2.png") no-repeat center center;
   background-size: cover;
-  height: 760px; /* Adjust height as needed */
+  height: 760px;
+  /* Adjust height as needed */
 }
 
 .blackdress1 {
   background: url("./assets/images/blackdress1.png") no-repeat center center;
   background-size: cover;
-  height: 680px; /* Maintain uniform height */
+  height: 680px;
+  /* Maintain uniform height */
 }
 
 .blackdress2 {
   background: url("./assets/images/blackdress2.png") no-repeat center center;
   background-size: cover;
-  height: 680px; /* Maintain uniform height */
+  height: 680px;
+  /* Maintain uniform height */
 }
 
 .blackdress3 {
   background: url("./assets/images/blackdress3.png") no-repeat center center;
   background-size: cover;
-  height: 680px; /* Maintain uniform height */
+  height: 680px;
+  /* Maintain uniform height */
 }
 
 h1.newarrivaltext.fw-bold {
@@ -266,38 +295,89 @@ h1.newarrivaltext.fw-bold {
   justify-content: center;
   display: contents;
 }
+
+
+/* Position the heart SVG */
+.position-relative {
+  position: relative;
+}
+
+.heart-circle {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+}
+
+.heart-circle svg {
+  margin-top: 8px;
+  margin-left: -18px;
+}
+
+/* Text styles */
+.imageheading {
+  color: #000;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.description {
+  color: #000;
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.description .price {
+  color: #000;
+}
+
+.description .strike-through {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.description .discount {
+  color: #888;
+}
+
+
 /* Default Heart Icon */
 .heart {
   position: absolute;
   top: 10px;
   right: 10px;
-  height: 12px; /* Adjust size */
+  height: 12px;
   width: 11px;
   cursor: pointer;
 }
 
-/* Active State */
 .heart.active {
-  filter: invert(0%) sepia(100%) saturate(500%) hue-rotate(0deg); /* Black heart */
-  transform: scale(1.1); /* Slight scale-up effect */
+  filter: invert(0%) sepia(100%) saturate(500%) hue-rotate(0deg);
+  transform: scale(1.1);
+}
+svg {
+  margin-top: 8px;
+  margin-left: -18px;
 }
 
-/* Custom Styling for Carousel */
-/* Custom Styling for Carousel */
 
-/* Container for the section */
+
 .section4 {
-  margin: 0 auto; /* Center the section horizontally */
-  padding: 50px 0; /* Padding around the section */
-  max-width: 1300px; /* Optional: Set a max-width for better control */
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 1300px;
 }
 
-/* Heading style */
 .exploreheading {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .heightwidthofimage {
@@ -306,34 +386,31 @@ h1.newarrivaltext.fw-bold {
 }
 
 .section4 {
-  max-width: 1200px; /* Adjust this to control the max width of the carousel */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
 }
 
-/* Owl Carousel Container */
+
+
 .owl-carousel {
   display: flex;
-  overflow: hidden; /* Ensures that images outside the visible area are hidden */
+  overflow: hidden;
   position: relative;
 }
 
-/* Item Style for Each Image */
 .owl-carousel .item {
-  flex: 0 0 auto; /* Prevents the item from shrinking or growing */
-  width: 100%; /* Show 2.5 images */
-  box-sizing: border-box; /* Includes padding in the width calculation */
+  flex: 0 0 auto;
+  width: 100%;
 }
 
-/* Image Style for Each Item */
 .owl-carousel .item img {
-  width: 580px; /* Make image fill the container */
-  height: 720px; /* Ensure the image takes full height of the container */
-  object-fit: cover; /* Ensure the image covers the area without stretching */
-  border-radius: 0%; /* Optional: Adds rounded corners for aesthetics */
+  width: 584px;
+  height: 792px;
+  object-fit: cover;
+
 }
 
-/* Navigation Arrows */
 .owl-carousel .owl-nav {
   position: absolute;
   top: 50%;
@@ -341,7 +418,6 @@ h1.newarrivaltext.fw-bold {
   display: flex;
 }
 
-/* Style for Navigation Buttons */
 .owl-carousel .owl-nav button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -351,7 +427,6 @@ h1.newarrivaltext.fw-bold {
   cursor: pointer;
 }
 
-/* Hover Effect for Navigation Buttons */
 .owl-carousel .owl-nav button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -365,11 +440,8 @@ h1.newarrivaltext.fw-bold {
   height: 714px;
   width: 628px;
 }
-/* .twoimage{
-  height : 357px;
-  width: 300px;
 
-} */
+
 video.img-fluid.no-gap.video {
   max-width: 628px;
   height: 736px;
@@ -378,32 +450,33 @@ video.img-fluid.no-gap.video {
 .newarrive .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px; /* Add consistent spacing between products */
-  justify-content: space-between; /* Ensures equal spacing between products */
+  gap: 15px;
+  justify-content: space-between;
 }
 
 .newarrive .col-6 {
-  flex: 1 1 calc(25% - 15px); /* Four items per row with spacing adjustments */
-  max-width: calc(25% - 15px); /* Ensures spacing between items */
+  flex: 1 1 calc(25% - 15px);
+  max-width: calc(25% - 15px);
 }
 
 .newarrive img {
-  max-height: 200px; /* Uniform height for product images */
+  max-height: 200px;
   object-fit: cover;
 }
+
 .faq {
-  background-color: #000; /* Black background */
+  background-color: #000;
   padding: 25px 0;
 }
 
 .faq img {
-  max-width: 80px; /* Adjust image size */
+  max-width: 80px;
   margin-bottom: 8px;
 }
 
 .faq p {
   font-size: 14px;
-  color: #fff; /* White text */
+  color: #fff;
 }
 
 .faq ul {
@@ -414,36 +487,81 @@ video.img-fluid.no-gap.video {
 .faq-item {
   flex: 1;
 }
-.spotlight{
-  background: url("./assets/images/backgroundspotlight.png") no-repeat center
-    center;
-  background-size: cover;
-  height: 343px; /* Adjust height as needed */
-  display: flex;
 
+.spotlight {
+  background: url("./assets/images/backgroundspotlight.png") no-repeat center center;
+  background-size: cover;
+  height: 343px;
+  display: flex;
 }
 
-.knockut{
-  margin-top: 35px;
-  margin-bottom: 20px;
+.knockut {
   font-family: "Alike", serif;
   font-size: 36px;
   color: #000;
 }
 
+.knock {
+  font-family: "Alike", serif;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.knockutdetail{
+.knockutdetail {
   font-family: "Alike", serif;
   font-size: 20px;
-  margin-bottom: 50px;
 }
-.mobiileimage{
-  margin-left: 140px;
+
+/* img.img-fluid {
+  height: 332px;
+  width: 302px;
+} */
+
+.appicons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.footer {
+  font-family: "Alike", serif;
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.footer-links a {
+  color: gray;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+.footer-heading {
+  font-family: "Lato";
+  margin-bottom: 4px;
+
+}
+
+.gapinfooter {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+
 
 @media (max-width: 768px) {
   .faq ul {
-    flex-direction: column; /* Stack items on smaller screens */
+    flex-direction: column;
   }
 
   .faq-item {
@@ -451,74 +569,85 @@ video.img-fluid.no-gap.video {
   }
 }
 
-
-
-
 @media (max-width: 992px) {
   .newarrive .col-6 {
-    flex: 1 1 calc(50% - 15px); /* Two items per row for medium screens */
+    flex: 1 1 calc(50% - 15px);
     max-width: calc(50% - 15px);
   }
 }
 
 @media (max-width: 576px) {
   .newarrive .col-6 {
-    flex: 1 1 100%; /* Single item per row for small screens */
+    flex: 1 1 100%;
     max-width: 100%;
   }
 }
 
 .section3 {
-  background-color: #f8f9fa; /* Optional background for contrast */
+  background-color: #f8f9fa;
 }
 
 .left-column {
-  margin-left: 10%; /* Adjust the gap for the left column */
+  margin-left: 10%;
+}
+
+.card img {
+  width: 302px;
+  height: 332px;
+  object-fit: cover;
+  border: none;
+  outline: none; 
+}
+
+.card {
+  border: none; 
+  outline: none; 
+  box-shadow: none;
 }
 
 .product-cards .row {
-  margin: 0; /* Remove default row margin for better spacing */
+  margin: 0;
 }
 
 .product-cards .col-6 {
-  flex: 0 0 25%; /* Ensure all four cards take up equal space in large screens */
+  flex: 0 0 25%;
   max-width: 25%;
 }
 
 .product-cards .img-fluid {
-  max-height: 200px; /* Uniform height for images */
+  max-height: 200px;
+  /* Uniform height for images */
   object-fit: cover;
 }
 
 @media (max-width: 992px) {
   .left-column {
-    margin-left: 0; /* Reset gap for smaller screens */
-    text-align: center; /* Align content centrally for responsiveness */
+    margin-left: 0;
+    text-align: center;
   }
 
   .product-cards .col-6 {
-    flex: 0 0 50%; /* Two products per row for medium screens */
+    flex: 0 0 50%;
     max-width: 50%;
   }
 }
 
 @media (max-width: 576px) {
   .product-cards .col-6 {
-    flex: 0 0 100%; /* Single product per row for smaller screens */
+    flex: 0 0 100%;
     max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .leftmargin {
-    margin-left: 0; /* Reset margin for smaller screens */
-    text-align: center; /* Center-align content for better responsiveness */
+    margin-left: 0;
+    text-align: center;
   }
 }
 
 footer {
   background-color: #b3b3b3;
-  color: black;
   padding: 40px 20px;
   font-family: "Alike", serif;
 }
@@ -539,52 +668,75 @@ footer h5 {
 }
 
 .footer-links a {
-  color: black;
   text-decoration: none;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: capitalize;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+
+
+.email-input-wrapper span {
+  font-family: "Alike";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  width: 160px;
+  color: #000;
 }
 
-.email-input-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+.withus{
+  color: #000 !important;
+}
+
+.email-input-wrapper span {
+  font-family: "Alike";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  width: 160px;
+  color: gray;
 }
 
 .email-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 12px;
-  color: black;
-  border: 2px black; /* Dashed border as per request */
-  outline: none;
+  flex-shrink: 0;
+  height: 36px;
+  flex-shrink: 0;
   border-radius: 4px;
+  border: 0.5px solid #000;
+  background: #B3B3B3;
 }
 
 .email-input::placeholder {
-  color: black; /* Placeholder text color */
-  opacity: 0.7; /* Slightly faded placeholder */
+  color: black;
+  opacity: 0.7;
 }
 
-.greater-sign {
-  position: absolute;
-  right: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  color: black;
-  cursor: pointer; /* Adds a clickable feel */
+.footertext1 {
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: capitalize;
 }
+
 
 .email-input:focus {
-  border-color: black; /* Keeps the dashed border on focus */
+  border-color: black;
   outline: none;
 }
+
 .h4 {
   font-size: 12px;
 }
+
 .h5 {
   font-size: 14px;
 }
@@ -605,6 +757,28 @@ footer h5 {
   color: #000;
 }
 
+.imageheading {
+  color: #000;
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 166.667% */
+  margin-bottom: 8px;
+}
+
+.Copyright{
+  color: #000;
+font-family: Lato;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; /* 166.667% */
+text-transform: capitalize;
+}
+
+
 .app-icons {
   display: flex;
   gap: 20px;
@@ -619,9 +793,12 @@ p {
   font-size: 14px;
   color: #666;
 }
+
 .bottom {
-  margin-top: 130px;
+  margin-top: 138px;
+  margin-bottom: 58px;
 }
+
 .whitetop {
   display: inline;
 }
@@ -640,14 +817,18 @@ img-fluid {
 /* Optional: Adjust Carousel Item for Responsive Layout */
 @media (max-width: 768px) {
   .owl-carousel .item {
-    width: 80%; /* Adjust width for smaller screens (single image per slide) */
-    padding: 0 5px; /* Adjust spacing for smaller screens */
+    width: 80%;
+    /* Adjust width for smaller screens (single image per slide) */
+    padding: 0 5px;
+    /* Adjust spacing for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .owl-carousel .item {
-    width: 100%; /* Single image on very small screens */
-    padding: 0; /* No space between items */
+    width: 100%;
+    /* Single image on very small screens */
+    padding: 0;
+    /* No space between items */
   }
 }
