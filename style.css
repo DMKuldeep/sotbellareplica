@@ -13,8 +13,11 @@
   overflow: hidden;
 }
 
-.twoimages {
-  margin-bottom: 114px;
+.divimage {
+  height: 357px;
+  align-self: stretch;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .image1 {
@@ -104,6 +107,17 @@
   cursor: pointer;
 }
 
+.addtocart {
+  display: flex;
+  width: 154px;
+  padding: 8px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background-color: #000;
+}
+
 .newarrive {
   justify-content: center;
 }
@@ -141,13 +155,13 @@
 }
 
 .exploreheading {
- color: #000;
-text-align: center;
-font-family: Alike;
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: 44px;
+  color: #000;
+  text-align: center;
+  font-family: Alike;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
 }
 
 .explore {
@@ -164,7 +178,7 @@ line-height: 44px;
   width: 589.09px;
 }
 
-*/ .section5 {
+.section5 {
   margin-top: 80px;
 }
 
@@ -173,13 +187,7 @@ line-height: 44px;
   margin-bottom: 30px;
 }
 
-.para2 {
-  margin-top: 355px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .shopbtn {
   margin-top: 15px;
@@ -249,21 +257,23 @@ line-height: 44px;
 }
 
 .newarrivaltext {
- color: #000;
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: 44px; /* 122.222% */
-text-transform: capitalize;
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  /* 122.222% */
+  text-transform: capitalize;
 }
 
 .smallpara {
- color: #000;
- font-family: 'Lato', sans-serif;
- font-size: 12px;
-font-style: normal;
-font-weight: 300;
-line-height: 20px; /* 166.667% */
+  color: #000;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  /* 166.667% */
 }
 
 .shopbtn {
@@ -273,7 +283,8 @@ line-height: 20px; /* 166.667% */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
+  /* 157.143% */
 }
 
 .imageheading {
@@ -483,10 +494,45 @@ svg {
 }
 
 
-video.img-fluid.no-gap.video {
-  max-width: 628px;
+
+.divsize {
   height: 736px;
+  width: 1280px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  
+  display: flex;
+  justify-content: space-between; 
 }
+
+.whitetopgirl {
+  height: 736px;
+  width: 628px;
+}
+
+.para2 {
+  
+  margin-top: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.divimage {
+  height: 357px;
+  width: 300px;
+  
+  gap: 16px; 
+}
+
+.videopic {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 
 .newarrive .row {
   display: flex;
