@@ -114,7 +114,17 @@
 
 .section3 {
   margin-top: 110px;
-  background-color: white !important;
+}
+
+.section3 .card {
+  border: none !important;
+  box-shadow: none !important; 
+}
+
+.section3 .card img {
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .description {
@@ -207,6 +217,21 @@
 
 .section6 {
   margin-top: 60px;
+}
+
+.no-outline {
+  border: none !important; /* Removes border */
+  box-shadow: none !important; /* Removes shadow */
+  outline: none !important; /* Removes outline */
+}
+
+
+
+@media (max-width: 768px) {
+  .custom-left-column {
+    margin-left: 20px; /* Smaller left margin for mobile */
+    margin-right: 20px; /* Adjust spacing from the grid */
+  }
 }
 
 .quote {
@@ -460,8 +485,11 @@ video.img-fluid.no-gap.video {
 }
 
 .newarrive img {
-  max-height: 200px;
-  object-fit: cover;
+object-fit: cover;
+  border: none;
+  width: 193px;
+height: 252.808px;
+flex-shrink: 0;
 }
 
 .faq {
@@ -583,9 +611,6 @@ footer p {
   }
 }
 
-.section3 {
-  background-color: #f8f9fa;
-}
 
 .left-column {
   margin-left: 10%;
@@ -597,6 +622,8 @@ footer p {
   object-fit: cover;
   border: none;
   outline: none; 
+  margin: 0; /* Removes any default margins */
+  padding: 0; 
 }
 
 .card {
@@ -604,6 +631,8 @@ footer p {
   outline: none; 
   box-shadow: none;
 }
+
+
 
 .product-cards .row {
   margin: 0;
@@ -777,6 +806,10 @@ font-weight: 300;
 line-height: 20px; /* 166.667% */
 text-transform: capitalize;
 }
+
+/* .text{
+  margin-left: 18px;
+} */
 
 
 .app-icons {
