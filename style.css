@@ -33,19 +33,19 @@
 }
 
 
-.app-icon{
+.app-icon {
   width: 181px;
-height: 55px;
-border-radius: 20px;
-margin: 16px;
-background: url(<path-to-image>) lightgray -11.341px -5.801px / 112.782% 121.875% no-repeat;
+  height: 55px;
+  border-radius: 20px;
+  margin: 16px;
+  background: url(<path-to-image>) lightgray -11.341px -5.801px / 112.782% 121.875% no-repeat;
 }
 
-.app-icon1{
+.app-icon1 {
   width: 181px;
-height: 55px;
-border-radius: 20px;
-background: url(<path-to-image>) lightgray -16.023px -26.222px / 118.033% 187.963% no-repeat;
+  height: 55px;
+  border-radius: 20px;
+  background: url(<path-to-image>) lightgray -16.023px -26.222px / 118.033% 187.963% no-repeat;
 }
 
 
@@ -66,7 +66,7 @@ background: url(<path-to-image>) lightgray -16.023px -26.222px / 118.033% 187.96
   background-position: center;
 }
 
-.image7{
+.image7 {
   .image6 {
     width: 300px;
     height: 357px;
@@ -1007,11 +1007,84 @@ input.email-input {
 
 .image-container:hover .video {
   display: block;
-  /* Show video on hover */
 }
 
 
 
+
+/* css forr blog post  */
+
+.container1 .bottommargin{
+margin-bottom: 48px;
+}
+ .container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.left-col,
+.right-col {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+  color: white;
+}
+
+.left-col {
+  transform: translateX(30%);
+}
+
+.right-col {
+  transform: translateX(30%);
+}
+
+.container1:hover .left-col {
+  transform: translateX(40%);
+}
+
+.container1:hover .right-col {
+  transform: translateX(-40%);
+} 
+
+.buttonviewall {
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 12px;
+  margin-top: 55px;
+  margin-bottom: 104px;
+  color: white;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+
+}
+
+
+img.img-fluid.model1 {
+  width: 552px;
+  height: 305px;
+}
+
+
+img.img-fluid.model2 {
+  width: 552px;
+  height: 305px;
+  flex-shrink: 0;
+}
 
 
 
