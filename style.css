@@ -40,6 +40,21 @@
   margin-bottom: 40px;
 
 }
+.line4{
+  text-decoration: "underline";
+}
+p.line4 {
+  text-decoration: underline;
+}
+
+.blog2 {
+  margin-top: 25px;
+  margin-left: 25px;
+  height: 230px;
+  width: 430px;
+  background-color: #281a1a21;
+  /* color: #5a1010; */
+}
 
 
 .app-icon {
@@ -141,6 +156,80 @@
   margin-left: 10px;
   cursor: pointer;
   font-size: 10px;
+}
+
+.sticky-top ul li a {
+  text-decoration: none;
+  color: white;
+  color: #FFF;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.sticky-top {
+  background-color: #00000099;
+  padding: 10px 0; 
+  position: sticky; 
+  top: 8px; 
+  z-index: 1000; 
+}
+
+.sticky-top p, 
+.sticky-top a, 
+.sticky-top i {
+  color: white; 
+}
+
+.sticky-top ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.sticky-top ul li {
+  display: inline; 
+  margin-right: 40px; /* Add space between items */
+color: #FFF;
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+}
+
+.sticky-top ul li a {
+  text-decoration: none; /* Remove underline from links */
+color: #FFF;
+font-family: "Lato";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 157.143% */
+text-transform: capitalize;
+}
+
+.sticky-top ul li a {
+  text-decoration: none;
+  color: #FFF;
+font-family: "Lato";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 157.143% */
+text-transform: capitalize; 
+}
+
+.sticky-top p{
+  color: #FFF;
+text-align: center;
+font-family: "DM Serif Display";
+font-size: 56px;
+font-style: normal;
+font-weight: 400;
+line-height: 64px; /* 114.286% */
 }
 
 
@@ -301,11 +390,11 @@
   margin-top: 80px;
 }
 
-.imagefullwidth img {
+.imagefullwidth .img {
   width: 1440px;
   height: 654px;
   margin-top: 40px;
-  margin-bottom: 58.5px;
+  margin-bottom: 58px;
 }
 
 #heart-icon:hover {
@@ -399,16 +488,6 @@
 }
 
 
-
-
-/* .blog2 p {
-  width: 411px;
-height: 204px;
-flex-shrink: 0;
-background: rgba(0, 0, 0, 0.60);
-} */
-
-
 @media (max-width: 768px) {
   .custom-left-column {
     margin-left: 20px;
@@ -422,15 +501,9 @@ background: rgba(0, 0, 0, 0.60);
   margin-top: 140px;
 }
 
-.blog2 {
-  margin-top: 25px;
-  margin-left: 25px;
-  height: 230px;
-  width: 430px;
-  background-color: grey;
+.right-col{
   color: white;
 }
-
 .newarrivaltext {
   color: #000;
   font-family: 'Alike';
