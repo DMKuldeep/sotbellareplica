@@ -43,3 +43,151 @@
   transform: translateX(-100%);
 }
 
+
+
+<div class="fourimages section4image">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-3 mb-4">
+      <div class="card text-center no-outline">
+        <div class="position-relative">
+          <img src="./assets/images/wildflower1.png" alt="girl1" class="img-fluid">
+          <div class="heart-circle">
+            <!-- Heart SVG -->
+          </div>
+        </div>
+        <div class="contentimage">
+          <p class="imageheading">Wildflower Print Co-ord Set</p>
+          <p class="description">
+            <span class="price">Rs. 2,449.00</span>
+            <span class="strike-through">Rs. 3,449.00</span>
+            <span class="discount">20% Off</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-3 mb-4">
+      <div class="card text-center no-outline">
+        <div class="position-relative">
+          <img src="./assets/images/wildflower2.png" alt="girl2" class="img-fluid">
+          <div class="heart-circle">
+            <!-- Heart SVG -->
+          </div>
+        </div>
+        <div class="contentimage">
+          <p class="imageheading">Wildflower Print Co-ord Set</p>
+          <p class="description">
+            <span class="price">Rs. 2,449.00</span>
+            <span class="strike-through">Rs. 3,449.00</span>
+            <span class="discount">20% Off</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-3 mb-4">
+      <div class="card text-center no-outline">
+        <div class="position-relative">
+          <img src="./assets/images/wildflower3.png" alt="girl3" class="img-fluid">
+          <div class="heart-circle">
+            <!-- Heart SVG -->
+          </div>
+        </div>
+        <div class="contentimage">
+          <p class="imageheading">Wildflower Print Co-ord Set</p>
+          <p class="description">
+            <span class="price">Rs. 2,449.00</span>
+            <span class="strike-through">Rs. 3,449.00</span>
+            <span class="discount">20% Off</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-3 mb-4">
+      <div class="card text-center no-outline">
+        <div class="position-relative">
+          <img src="./assets/images/wildflower4.png" alt="girl4" class="img-fluid">
+          <div class="heart-circle">
+            <!-- Heart SVG -->
+          </div>
+        </div>
+        <div class="contentimage">
+          <p class="imageheading">Wildflower Print Co-ord Set</p>
+          <p class="description">
+            <span class="price">Rs. 2,449.00</span>
+            <span class="strike-through">Rs. 3,449.00</span>
+            <span class="discount">20% Off</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+.fourimages .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Ensures spacing between items */
+}
+
+.card {
+  border: none;
+  background: none;
+}
+
+.position-relative img {
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.contentimage {
+  margin-top: 12px;
+}
+
+.imageheading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.price {
+  font-weight: bold;
+  color: #000;
+}
+
+.strike-through {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.discount {
+  color: green;
+}
+
+@media (max-width: 576px) {
+  .row {
+    gap: 8px;
+  }
+
+  .contentimage {
+    text-align: center;
+  }
+
+  .imageheading {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+}
